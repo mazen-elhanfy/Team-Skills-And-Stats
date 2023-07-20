@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 150vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-columns: repeat(8 , 1fr);
+    grid-template-areas: 
+    "header header header header header header header header header header header header "
+    "body body body body body body body body body body body body "
+    "body body body body body body body body body body body body "
+    "body body body body body body body body body body body body "
+    "body body body body body body body body body body body body "
+    "body body body body body body body body body body body body "
+    "body body body body body body body body body body body body "
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    padding: 30px;
+}
+/*start of header section*/
+.header{
+    width: 80%;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    margin-top: 30px;
+}
+.header .second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+.header .second>div{
+    text-transform: capitalize;
+}
+/*end of header setion*/
+
+/*start of body ssection*/
+.body{
+    grid-area: body;
+    position: relative;
+}
+.body .one{
+    background-color: #ddd;
+    height: 20%;
+    position: relative;
+}
+ .body .one h2{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.body .one p{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.blue{
+    color: dodgerblue;
+}
+.body .two{
+    height: 11%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+}
+.body .two >div{
+    width: calc(96% / 3);
+    height: 100%;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.body .two .eins img,
+.body .two .zwei img,
+.body .two .drei img{
+    width: 80px;
+    height: 80px;
+}
+
+.body .three{
+        background-color: #ddd;
+            height: 18%;
+            position: relative;
+            margin-top: 20px;
+}
+.body .three img{
+    width: 35%;
+    width: 35%;
+        height: 86%;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+}
+.body .three h2{
+    position: absolute;
+    left: 55%;
+    top: 15%;
+    text-transform: capitalize;
+}
+.body .three p{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+}
+.body .four{
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.body .four > div{
+    width: calc(96% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+.body .four .eins{
+    background-color: rgb(110, 0, 0);
+}
+.body .four .zwei{
+    background-color: rgb(4, 58, 90);
+}
+.body .four .drei{
+    background-color: rgb(1, 100, 31);
+}
+.small{
+    font-weight: lighter;
+}
+
+.body .five{
+height: 40%;
+    background-color: #ddd;
+    position: relative;
+    margin-top: 20px;
+}
+.body .five h2{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    text-transform: capitalize;
+}
+.body .five .info {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.body .five .info>div {
+    width: 100%;
+        height: calc(94% / 5);
+        position: relative;
+        text-transform: capitalize;
+        margin-left: 75px;
+        font-weight: bold;
+}
+.body .five .eins::after{
+    content: "";
+    width: 70%;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    left: 15%;
+    top: 0%;
+}
+.body .five .eins::before{
+    content: "60%";
+        width: 45%;
+        height: 30px;
+        background-color: dodgerblue;
+        position: absolute;
+        left: 15%;
+        top: 0%;
+        color: #fff;
+        z-index: 3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+.body .five .zwei::after{
+    content: "";
+    width: 70%;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    left: 15%;
+    top: 0%;
+}
+.body .five .zwei::before{
+    content: "70%";
+        width: 50%;
+        height: 30px;
+        background-color: dodgerblue;
+        position: absolute;
+        left: 15%;
+        top: 0%;
+        color: #fff;
+        z-index: 3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+.body .five .drei::after{
+    content: "";
+    width: 70%;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    left: 15%;
+    top: 0%;
+}
+.body .five .drei::before{
+    content: "80%";
+        width: 55%;
+        height: 30px;
+        background-color: dodgerblue;
+        position: absolute;
+        left: 15%;
+        top: 0%;
+        color: #fff;
+        z-index: 3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+.body .five .vier::after{
+    content: "";
+    width: 70%;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    left: 15%;
+    top: 0%;
+}
+.body .five .vier::before{
+    content: "65%";
+        width: 47%;
+        height: 30px;
+        background-color: dodgerblue;
+        position: absolute;
+        left: 15%;
+        top: 0%;
+        color: #fff;
+        z-index: 3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+.body .five .funf::after{
+    content: "";
+    width: 70%;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    left: 15%;
+    top: 0%;
+}
+.body .five .funf::before{
+    content: "90%";
+        width: 60%;
+        height: 30px;
+        background-color: dodgerblue;
+        position: absolute;
+        left: 15%;
+        top: 0%;
+        color: #fff;
+        z-index: 3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+
+/*end of body section*/
+
+/*start of footer section*/
+.footer{
+    background-color: #000;
+    grid-area: footer;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.footer .info>div{
+    color: #fff;
+    text-transform: capitalize;
+}
+.teal{
+    color: teal;
+}
+/*end of footer section*/
